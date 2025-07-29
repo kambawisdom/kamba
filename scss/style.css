@@ -1,0 +1,338 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background:white;
+  color: #333;
+  
+}
+
+header {
+  display: flex;
+  background: #0b2c61;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav a {
+  color:orange;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+nav a:hover {
+  text-decoration:none;
+  color:rgb(21, 180, 243);
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.home-section{
+  height: 150vh;
+  background-color: rgb(23, 50, 61);
+  /* width: 100%; */
+  /* background: linear-gradient(to right, rgba(red), blue); */
+  padding-top: 3rem;
+  display: flex;
+  align-items: center;
+  
+  /* justify-content: center; */
+ 
+}
+
+.home-container-inner{
+  width: 80%;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin: 0 auto;
+}
+
+
+.name-intro{
+  font-size: 1rem;
+  color: orange;
+  margin-bottom: 10px;
+}
+
+.my-self{
+  font-size: 2rem;
+  color: rgb(236, 240, 241);
+  margin-bottom: 5px;
+  
+}
+
+.profile-pic {
+  width: 350px;
+  object-fit: cover;
+  border-radius: 100px;
+  margin-top: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.social-media {
+  margin-top: 20px;
+  text-align: center;
+
+}
+
+.social-media a {
+  margin: 0 15px;
+  font-size: 24px;
+  color: rgb(23, 50, 61);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: orange;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 250px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.portfolio-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  background-color: rgb(23, 50, 61);
+  padding: 2rem;
+  align-items: center;
+
+}
+
+.portfolio-item{
+  background-color:black;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.profile-frame {
+  width: 300px;
+  height: 250px;
+  background: url('IMAGE/Pho.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-photo {
+  width: 100px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.portfolio-item {
+  text-align: center;
+  width: 220px;
+}
+
+.portfolio-item h3 {
+  margin-top: 15px;
+  font-size: 18px;
+  color: white;
+}
+
+.portfolio-item p {
+  font-size: 14px;
+  color: white;
+}
+
+#portfolio {
+  padding: 40px;
+  text-align: center;
+}
+
+.portfolio-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 30px;
+  flex-wrap: nowrap; /* Keep items in one row */
+  padding-bottom: 10px;
+  overflow-x: auto;
+}
+
+.portfolio-card {
+  flex: 0 0 240px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.profile-frame {
+  width: 100%;
+  height: 160px;
+  background: #111;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  box-shadow: inset 0 0 10px #000;
+  max-width: 300px;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.portfolio-card h3 {
+  font-size: 18px;
+  color: #222;
+  margin: 10px 0 5px;
+}
+
+.portfolio-card p {
+  font-size: 14px;
+  color: #222;
+}
+
+
+.profile-image{
+  width: 350px;
+  border-radius: 20%;
+}
+
+
+.contact-container{
+  display: flex;
+  gap: 2rem;
+}
+
+form {
+  width: 60%;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0 2px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+.social{
+  padding: 1rem;
+  background-color: rgb(18, 204, 225);
+}
+
+.social p {
+  margin: 10px 0;
+}
+
+
+form input,
+form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  padding: 10px;
+  background: rgb(23, 50, 61);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: orange;
+}
+
+
+
+
+
+
+footer {
+  background: #0b2c61;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #00bfff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #009acd;
+}
